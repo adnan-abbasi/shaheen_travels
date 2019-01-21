@@ -1,0 +1,202 @@
+
+html{
+    box-sizing: border-box;
+    /*css reset is used for multiplate form view of your website without inheritance */
+}
+
+*, *before, *:after {
+    
+    box-sizing:inherit;
+}
+
+
+body {
+    background-color: rgb(234, 230, 240);
+    background-image:url('file:///C:/Users/726927/Desktop/Web%20development/HTML/Assignment%201/Shaheen%20Travels/images/background.jpg');
+    /* a stands for aboscarity mean how bright is the colour 
+    
+    font sefir and sanc seif should go hand to hand */
+    font-size:15px;
+    text-align: justify;
+    padding:100px;
+}
+
+p {
+    color: rgb(9, 17, 2);
+}
+   /* font: font-style font-variant font-weight font size/line-height font-family; 
+   font size and font family go together    in css we use : and in html we use ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic
+
+}
+h1 {
+    color: rgb(38, 14, 95); /* !important will fix this propery value pair for this h1 only and can be applied only in particular one
+    font-family: 'Coiny', cursive;
+}
+h4 {
+    color: rgb(238, 240, 230);
+    font-size: 100%;
+    font-size: 1.5em;
+    font-size: 19px;
+    font-family: 'Lobster', cursive;
+     /* it takes the ralative value of parent font size 
+}
+
+
+/* this is to decedent combinatior IT GOES FROM RIGHT TO LEFT the browser will look for all em and then only em inside a and then all a inside li and then all li inside ul 
+ul li a em {
+color: red;
+}
+
+.important {
+    color:yellow;
+}
+
+{
+
+}
+
+
+a {
+    color: rgb(89, 19, 202);
+}
+*/
+/*pseudo class
+/*a:link {color:black}  un visited link
+/*a:visited {color: green}  /*visited  link*/
+/*a:hover {color:blue} mouse over or select with key board link*/
+ /* a:active {color:black}selected  link*/
+
+ /*pseudo element  in this case below it will increase the first letter of every paragraph on each page using this style.css*/
+
+ 
+
+ /*p::first-letter{
+    font-size: 130%;
+}
+*/
+nav a {
+    color: rgb(14, 17, 1);
+    
+}
+header  {
+    background-color: rgb(37, 143, 27);
+    width:100%;
+    height: 200px;
+}
+
+footer  {
+    background-color: rgb(136, 90, 221);
+    width: 100% ; /*  use it when you have to display on diffferent screens.  its better to use px for height cause we can easily scroll up and down*/
+    padding:0px;
+}
+div  {
+    background-color: rgb(63, 201, 97);
+}
+div.content_page_hadings{
+    background-color: rgb(205, 221, 111);
+} 
+
+.style-headers{
+    width: 50%;
+
+}
+}
+.box{
+    padding:100px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: blue;
+}
+
+0
+/* margin:auto means it will come in the center the 4 values start from the top and go clock wise*/
+
+.marg_box{
+margin: 0px 70px 30px 20px;
+}
+
+
+/*we can use multiple classes like this...
+h1,h2,h3,h4{
+
+}*/
+
+.pad_box{
+    padding:10x 20x 40x;
+    
+}
+div#sidebar{
+   
+    width: 31% ;
+    margin:auto; /*  use it when you have to display on diffferent screens.  its better to use px for height cause we can easily scroll up and down*/
+    padding:5px;
+
+}
+
+.bdr_box {
+    float:
+    width:50%;
+    border:
+    height:
+    box-sizing: border_box;
+}
+
+form label{
+    font-size: 10pt
+}
+div lable {
+    position:relative;
+}
+
+.top_pos{
+    margin: 10px;
+    position: relative;
+    bottom:10px;
+    left: 933px;
+    background-color: #ff596a;
+}
+.bottom_pos{
+    position: absolute;
+    bottom: 10px;
+    left: 60px;
+    background-color: aqua;
+    z-index: 2;
+}
+
+div{
+    position :relative;
+}
+
+.float{
+    float:right;
+    width: 200px;
+    height: 200px;
+    background: yellow;
+}
+/*will not allow any thing on the left if we apply it on p tag.*/
+.clear-left {
+   clear: left;
+}
+
+.cf:before,
+.cf:after{
+    content:* *;
+    dispaly:table;
+}
+.cf:after{
+    clear:both;
+}
+.cf{
+    *zoom:1;
+}
+
+/*media queries to have more controll for dispaly on different devices.
+@media screen and (min-width:1200px)
+{
+    body{
+        background: red;
+    }
+}
+*/
