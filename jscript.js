@@ -91,12 +91,12 @@ var link=document.getElementById("resetButton");
 var fromResetButton=function(event){
     
 }
-link.addEventListener("click",fromResetButton);*/
+link.addEventListener("click",fromResetButton);
 
 var link=document.getElementById("resetButton");
 link.addEventListener("click",function(event){
 event.preventDefault();
-
+}
 if (true==confirm("Are You sure you  want to reset?"))
 {
     
@@ -104,5 +104,19 @@ if (true==confirm("Are You sure you  want to reset?"))
 }
 else
 alert(" Reset Not  done");
-});
+*/
+
+var link=document.getElementById("resetButton");
+
+
+var handleReset=function(event)
+{
+    event.preventDefault();
+    alert("Reset cannot be done at this moment");
+    
+}
+
+link.addEventListener("click",handleReset);
+
+
 
