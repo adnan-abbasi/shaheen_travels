@@ -6,11 +6,12 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+        
     <header >
             <a ></a><img class="float" src= "images//logo.jpg">  </a>   <h1> <p> Shaheen Air Travels </p></h1>
            
            <h2>Customer Registration</h2>
-           <a href="index.html">  Home Page </a>g
+           <a href="index.html">  Home Page </a>
     </header>
     
     <main>
@@ -21,18 +22,18 @@
      <div class="box" >
 
 
-    <form action="POST"  class=" marg_box  pad_box  " >
+    <form action=" " method="POST" class=" marg_box  pad_box  " >
             <!--Full Name: <input type="text" name=" fullname"><br>-->
-            <lable for="fname">First  Name: </lable>
-             <input id= "fname" type="text" name=" fname"><br>
-             <lable for="lname">Last  Name: </lable>
-             <input id= "lname" type="text" name=" lname"><br>
+            <lable for="fname">First  Name: &nbsp;&nbsp; &nbsp;&nbsp;  </lable>
+             <input id= "fname" type="text" name=" fname"><br><br>
+             <lable for="lname">Last  Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   </lable>
+             <input id= "lname" type="text" name=" lname"><br><br>
               <!-- another way of display  EVERY ID MUST BE UNIQUE  -->
               <lable for="ad_line1">Address Line1: </lable>
-             <input id= "ad_line1" type="text" name=" ad_line1"><br>
+             <input id= "ad_line1" type="text" name=" ad_line1"><br><br>
 
              <lable for="ad_line2">Address Line2: </lable>
-             <input id= "ad_line2" type="text" name=" ad_line2"><br>
+             <input id= "ad_line2" type="text" name=" ad_line2"><br><br>
 
              
              <!--  LIST BOX drop down -->
@@ -41,15 +42,18 @@
                 <option value=" val_usa"> Usa</option>
                 <option value="val-mexico"> Maxico </option>
             </select><br>
-            <lable>Select State:</lable> <select name="state">
+            <lable>Select State:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</lable> <select name="state">
                     <option value="val_"> Alberta</option>
                     <option value=" val_usa"> Brithish colombia</option>
                     <option value="val-mexico"> Ontario </option>
                 </select><br>
+                <lable for="postal_code">Postal Code: &nbsp;&nbsp;&nbsp;</lable>
+             <input id= "postal_code" type="text" name=" postal_code"><br><br>
+                
 
             <lable> Gender : </lable>
-             <input type="radio" name=" male" value="val_male"><lable> Male</lable>
-             <input type="radio" name=" female" value="val_female"> <lable>Female </lable><br>
+             <input type="radio" name=" rd_gender" value="val_male"><lable> Male</lable>
+             <input type="radio" name=" rd_gender" value="val_female"> <lable>Female </lable><br>
 
            
         <lable> Choose which class  you like to travel : </lable>
@@ -59,8 +63,9 @@
 
                <label> Special Requests: </label> <textarea  name=" details">  </textarea>
         
-        <input type="submit" >
-        <input type="reset" >
+        <input id= "submitButton" type="submit" >
+        <input id= "resetButton"  type="reset" ><br>
+        
         
             </form>
         </div>
@@ -69,6 +74,9 @@
                      Copy Right &copy 2019 
                  </P>
              </footer>
+             <script src="jscript.js">
+        
+            </script>
 </body>
 
         </html>

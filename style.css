@@ -12,7 +12,9 @@ html{
 
 body {
     background-color: rgb(234, 230, 240);
-    background-image:url('file:///C:/Users/726927/Desktop/Web%20development/HTML/Assignment%201/Shaheen%20Travels/images/background.jpg');
+    background-image:url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     /* a stands for aboscarity mean how bright is the colour 
     
     font sefir and sanc seif should go hand to hand */
