@@ -82,15 +82,27 @@ alert("Hi jjjkjdkjdjd ");
 var sayHi=function(event){
     console.log("i am here hi");
 }
-button.addEventListener("click",sayHi);*/
+button.addEventListener("click",sayHi);
+
+
+
+
+var link=document.getElementById("resetButton");
+var fromResetButton=function(event){
+    
+}
+link.addEventListener("click",fromResetButton);*/
+
 var link=document.getElementById("resetButton");
 link.addEventListener("click",function(event){
 event.preventDefault();
+
 if (true==confirm("Are You sure you  want to reset?"))
 {
-    console.log(" Reset done");
+    
+    alert(" Reset done");
 }
 else
-console.log(" Reset Not  done");
+alert(" Reset Not  done");
 });
 
