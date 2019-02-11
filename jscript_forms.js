@@ -5,7 +5,7 @@ var getResetId = document.getElementById("resetButton");
 getResetId.addEventListener("click", function (event) {
     var value = confirm("Are You sure you  want to reset?");
     if (true == value)
-        document.AgtregForm.reset();
+        document.regForm.reset();
     else
         event.preventDefault();
 
@@ -24,27 +24,27 @@ var getFnameDisc = document.getElementById("FirstNameDisc");
 var myLastNameId = document.getElementById("lnameid");
 var getLnameDisc = document.getElementById("lastNameDisc");
 
-var bizPhoneId = document.getElementById("bizPhoneid");
-var getAgtPhoneDis = document.getElementById("agtPhoneDisc");
+var myAddressL1Id = document.getElementById("ad_line1");
+var getAddressL1Disc = document.getElementById("adressL1Disc");
 
-var emailId = document.getElementById("agtemail");
-var getEmailDisc=document.getElementById("emailDisc");
+var myPCode = document.getElementById("postal_codeId");
+var getPCodeDisc=document.getElementById("pCodevalid");
 
 var mySubmitBtn = document.getElementById("submitButton");
 //var getErrorId = document.getElementById("errorId");
 mySubmitBtn.addEventListener('click', function (event) {
     
 
-    var checkEmail = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/.test(document.AgtregForm.agtemail.value);
-    var fNameValue = document.AgtregForm.fname.value;
-    var LNameValue = document.AgtregForm.lname.value;
-    var bizphoneVal = document.AgtregForm.bizPhone.value;
-    //var addressLine2Value = document.AgtregForm.ad_line2.value;
-    //var pCodeValue = document.AgtregForm.postal_code.value;
+    var checkPCode = /^[A-Z]\d[A-Z] ?\d[A-Z]\d$/.test(document.regForm.postal_code.value);
+    var fNameValue = document.regForm.fname.value;
+    var LNameValue = document.regForm.lname.value;
+    var addressLine1Value = document.regForm.ad_line1.value;
+    //var addressLine2Value = document.regForm.ad_line2.value;
+    //var pCodeValue = document.regForm.postal_code.value;
 
     if (false === checkPCode) {
         event.preventDefault();
-        getEmailDisc.style.display = "block";
+        getPCodeDisc.style.display = "block";
     }
      if (fNameValue === "")
       {
@@ -62,13 +62,13 @@ mySubmitBtn.addEventListener('click', function (event) {
     else
     getLnameDisc.style.display="none";
 
-    if (bizphoneVal === "")
+    if (addressLine1Value === "")
       {
         event.preventDefault();
-        getAgtPhoneDis.style.display = "block";
+        getAddressL1Disc.style.display = "block";
     }
     else
-    getAgtPhoneDis.style.display="none";
+    getAddressL1Disc.style.display="none";
     
     
 });
@@ -92,22 +92,22 @@ myLastNameId.addEventListener('focus', function (event) {
     getLnameDisc.style.display = "block";
 
 });
-//// For business phone
+//// For Address Line 1
 
-bizPhoneId.addEventListener('focus', function (event) {
+myAddressL1Id.addEventListener('focus', function (event) {
 
     getFnameDisc.style.display = "none";
     getLnameDisc.style.display = "none";
-    getAgtPhoneDis.style.display = "none";
-    getAgtPhoneDis.style.display = "block";
+    getAddressL1Disc.style.display = "none";
+    getAddressL1Disc.style.display = "block";
 
 });
-//For email
-emailId.addEventListener('focus', function (event) {
+//For postal code
+myPCode.addEventListener('focus', function (event) {
 
     getFnameDisc.style.display = "none";
     getLnameDisc.style.display = "none";
-    getAgtPhoneDis.style.display = "none";
-    getEmailDisc.style.display = "block";
+    getAddressL1Disc.style.display = "none";
+    getPCodeDisc.style.display = "block";
 
 });
