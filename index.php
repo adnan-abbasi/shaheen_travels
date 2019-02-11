@@ -1,23 +1,38 @@
+
+<?php
+/*********************************************************
+ * Aouther : Adnan Abbasi
+ * Date: Feb 10 ,2019
+ * Purpose: This is the Home page.
+ * Requrire: function.php and AgetClass.php
+ **************************************************************/
+//make a zip folder and name is CPRG210_ADNAN_ABBASI 
+include_once("functions.php");
+
+?>
 <!doctype html>
+
 <html>
 <head>
                 <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
                 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
                 <link rel="stylesheet" href="style.css">
 <meta   charset="utf-8">  <!-- used to handle differnt characters traslation for browser.--> 
+
 <title> Shaheen Travel</title>
 </head>
 
 <body>
-        <header>
-        <a ></a><img class="float" src= "images//logo.jpg">  </a>   <h1> <p> Shaheen Air Travels </p></h1>
-    <h2> Well Come To Shaheen Air Travels  </h2><br>
-   <nav>
-    <a id="resetButton" href="contact.html">Contact us</a>&nbsp;&nbsp;
-    <a href="register.html">Register Here</a>&nbsp;&nbsp;
-    <a id="resetButton" href="index.html">  Home Page </a>
-    </nav>
+<?php
+include_once("header.php");
+print("Date and Time=  ".CurrentTimeAndDate());
+include("menu.php");
+?>
+<header>
+
 </header>
+
+   
 <main>
     <p> We offer very resonabel fares and we try to make a convinent rout for you throug out the globe . <BR> 
         We have connections with most of the major air lines.Call us today to book your trip.</p>
@@ -27,15 +42,15 @@
 <!--Java Script Table here-->
 
         </div>
-          
-                    
+                         
         
-
 <footer> 
-                <P>
-                 Copy Right &copy 2019 
-             </P>
+<?php
+include_once("footer.php");
+?>
          </footer>
 <script  src="jscript.js">
 </script>
+
 </body>
+</html>

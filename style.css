@@ -24,6 +24,7 @@ body {
 
 p {
     color: rgb(46, 9, 9);
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
    
 
@@ -134,9 +135,13 @@ tr{
     width: 100px;
     height: 100px;
     background-color: green;
+    border-color: #000;
 }
 tr img{
  width: 100px;
  height: 100px;   
 }
 
+nav{
+    background-color: beige;
+}
