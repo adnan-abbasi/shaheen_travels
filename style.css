@@ -86,7 +86,7 @@ div  {
 /***********This call will set the border with given properties where embeded**************/
 .box{
     padding:100px;
-    border-width: 2px;
+    border-width: 1px;
     border-style: solid;
     border-color: blue;
 }
