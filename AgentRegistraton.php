@@ -25,6 +25,7 @@ session_start();
               
 include_once("header.php");
 include("menu.php");
+
 ?>
     </header>
     
@@ -32,7 +33,30 @@ include("menu.php");
 <p> Please Fill in  the required information before requesitng for a trip fare. <BR> 
     Once your information will be submitted and approved we will send you a confirmation email.  Thanks </p>
     </main>
+    <?php
+        //inserting the from values to Agent Class
+        if(isset($_GET["submitBtn"]))
+        {
+        $id=null;
+        $fname=$_GET["fname"];
+        $mname=$_GET["midIni"];
+        $lname=$_GET["lname"];
+        $busPhone=$_GET["bizPhone"];
+        $email=$_GET["agtemail"];
+        $agtposition=$_GET["agtPostion"];
+        $agencyid=$_GET["agencyid"];
 
+        
+        $agentInsertObj=new Agent($id,$fname,$mname,$lname,$busPhone,$email,$agtposition,$agencyid);
+        $insert_result=AgentCreate($agentInsertObj);
+        
+        if($insert_result==true)
+        print("<h3>Your information has been saved</h3>");
+        else
+        print("Agent data NOT inserted");
+        }
+        ?>
+     
      <div class="box" ><!--Form Container starts from here -->
             <div class=" F_discr_box " >
 

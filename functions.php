@@ -52,7 +52,7 @@ function GetUsers()
 function CurrentTimeAndDate()
 {
     //date_default_timezone_get() 
-    $dateToday=gmDate("Y-m-d\TH:i:s\Z"); 
+    $dateToday=Date("Y-m-d H:i:s"); 
     return $dateToday;
 }
 
@@ -60,7 +60,7 @@ function AgentCreate ($agent_data_obj){
     //$agentObj=new Agent($id,$fname,$mname,$lname,$busPhone,$email,$agtposition,$agencyid);
     //$agent_data=array();
     $agent_data=$agent_data_obj->convertOBjtoArray();
-    print_r($agent_data);
+    //print_r($agent_data);
 
     $id=$agent_data["AgentId"];
     $agtfname=$agent_data["AgtFirstName"];
@@ -72,46 +72,17 @@ function AgentCreate ($agent_data_obj){
     $agencynId=$agent_data["AgencyId"];
 
     $dbh = GetDbconnection();
-    $sql= "INSERT INTO agents(AgentId,AgtFirstName,AgtMiddleInitial,AgtLastname,AgtBusPhone,AgtEmail,AgtPosition,AgencyId) VALUES('$id','$agtfname','$midIni','$lastName','$agtBusPhone','$agtemail','$agtposition','$agencynId')";
+    $sql= "INSERT INTO agents(AgentId,
+    AgtFirstName,
+    AgtMiddleInitial,
+    AgtLastname,
+    AgtBusPhone,
+    AgtEmail,
+    AgtPosition,
+    AgencyId) VALUES('$id','$agtfname','$midIni','$lastName','$agtBusPhone','$agtemail','$agtposition','$agencynId')";
 
 $result=mysqli_query($dbh,$sql);
-    // $sql = "INSERT INTO agents ( 
-         
-    //      AgtFirstName,
-    //      AgtMiddleInitial,
-    //      AgtLastName,
-    //      AgtBusPhone,
-    //      AgtEmail,
-    //      AgtPosition,
-    //      AgencyId) VALUES ('$idfname','$midIni','$lastName','$agtBusPhone','$agtemail','$agtposition','$agtegnId')";   
-    // $sql = "INSERT INTO agents (
-    //     AgentId,
-    //     AgtFirstName,
-    //     AgtMiddleInitial,
-    //     AgtLastName,
-    //     AgtBusPhone,
-    //     AgtEmail,
-    //     AgtPosition,
-    //     AgencyId) 
-    //     VALUES (?,?,?,?,?,?,?,?)";
-
-    // $stmt = mysqli_prepare($dbh, $sql);
-    // mysqli_stmt_bind_param($stmt, 'issssssi',
-    //     $agent_data["AgentId"],
-    //     $agent_data["AgtFirstName"],
-    //     $agent_data["AgtMiddleInitial"],
-    //     $agent_data["AgtLastName"],
-    //     $agent_data["AgtBusPhone"],
-    //     $agent_data["AgtEmail"],
-    //     $agent_data["AgtPosition"],
-    //     $agent_data["AgencyId"]);
-    // // $result = mysqli_stmt_execute($stmt);
     
-    // $fh = fopen("new_agent_log.txt", "a");
-    
-    // fwrite($fh, print_r($agent_data, true));
-    // fclose($fh);
-
   
     
     //CloseDB($dbh);

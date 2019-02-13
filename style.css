@@ -130,7 +130,10 @@ td{
     height: 100px;
     background-color: #ff596a;
 }
-
+.box input {
+    border: 1px dotted #3700ff;
+    
+}
 tr{
     width: 100px;
     height: 100px;

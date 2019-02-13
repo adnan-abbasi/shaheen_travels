@@ -1,3 +1,11 @@
+//**************************************
+//Aouther : Adnan Abbasi
+//This page will get the agent Registered in the agency.
+//
+//
+//************************************ */*/
+
+
 /////////CHANGE DEFAULT OF RESET BUTTON
 //********************************************************************************************************* */
 var getResetId = document.getElementById("resetButton");
