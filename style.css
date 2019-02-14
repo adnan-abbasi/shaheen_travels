@@ -86,10 +86,16 @@ div  {
 /***********This call will set the border with given properties where embeded**************/
 .box{
     padding:100px;
+<<<<<<< HEAD
     border-width: 1px;
     border-style: solid;
     border-color: rgb(3, 0, 17);/*this is done in test git hub test2 */
     
+=======
+    border-width: 2px;
+    border-style: solid;/*This is done in github master brach2*/
+    border-color: rgb(255, 0, 0);
+>>>>>>> master
 }
 
 /*******TO SET THE MARGIN OF ELEMENT WHERE EMBEDED*/
